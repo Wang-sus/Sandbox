@@ -68,7 +68,7 @@ BLOCK.TNT = {
 	transparent: false,
 	selflit: false,
 	gravity: true,
-	fluid: true,
+	fluid: false,
 	texture: function( world, lightmap, lit, x, y, z, dir )
 	{
 		if ( dir == DIRECTION.UP || dir == DIRECTION.DOWN )
@@ -96,7 +96,7 @@ BLOCK.BOOKCASE = {
 
 // Lava
 BLOCK.LAVA = {
-	spawnable: false,
+	spawnable: true,
 	transparent: true,
 	selflit: true,
 	gravity: true,
