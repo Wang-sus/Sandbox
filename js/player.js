@@ -185,6 +185,16 @@ Player.prototype.update = function()
 		if ( this.keys[" "] && !this.falling )
 			velocity.z = 8;
 
+
+				//Flying
+		if ( this.keys["f"] ) {
+			if ( this.keys[" "] ) {
+				velocity.z = 8;
+			} else {
+				velocity.z = 0;
+			}
+		}
+
 		// Walking
 		var walkVelocity = new Vector( 0, 0, 0 );
 		if ( !this.falling )
