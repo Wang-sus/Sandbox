@@ -117,8 +117,6 @@ Player.prototype.onKeyEvent = function( keyCode, down )
 	var key = String.fromCharCode( keyCode ).toLowerCase();
 	this.keys[key] = down;
 	this.keys[keyCode] = down;
-	
-	if ( !down && key == "t" && this.eventHandlers["openChat"] ) this.eventHandlers.openChat();
 }
 
 // onMouseEvent( x, y, type, rmb )
