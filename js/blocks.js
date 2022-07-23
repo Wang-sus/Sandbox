@@ -67,8 +67,8 @@ BLOCK.TNT = {
 	spawnable: true,
 	transparent: false,
 	selflit: false,
-	gravity: false,
-	fluid: false,
+	gravity: true,
+	fluid: true,
 	texture: function( world, lightmap, lit, x, y, z, dir )
 	{
 		if ( dir == DIRECTION.UP || dir == DIRECTION.DOWN )
