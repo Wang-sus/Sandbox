@@ -220,6 +220,13 @@ Player.prototype.update = function()
 				velocity.z = 0;
 			}
 		}
+
+		// test Flying
+		if ( this.keys["l"] ) {
+			if ( this.keys[" "] ) {
+				velocity.z = 8;
+			}
+		}
 		
 		// Walking
 		var walkVelocity = new Vector( 0, 0, 0 );
