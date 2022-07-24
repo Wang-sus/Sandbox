@@ -27,21 +27,6 @@
 		<table id="materialSelector">
 			<tr></tr>
 		</table>
-					<table width="854">
-				<tr>
-					<td>
-						<i>OBJ:</i>
-						<input id="selectFileOBJ" type="file"></input>
-					</td>
-					<td>
-						<i>MTL:</i>
-						<input id="selectFileMTL" type="file"></input>
-					</td>
-					<td>
-						<button onclick="actionButton()">View</button>
-					</td>
-				</tr>
-			</table>
 
 		<!-- Initialisation code -->
 		<script type="text/javascript">			
@@ -85,7 +70,24 @@
 				while ( new Date().getTime() / 1000 - time < 0.016 );
 			}, 1 );
 		</script>
-				<script type="text/javascript">				
+				<div id="container">
+		<div id="loadFiles">
+			<table width="854">
+				<tr>
+					<td>
+						<i>OBJ:</i>
+						<input id="selectFileOBJ" type="file"></input>
+					</td>
+					<td>
+						<i>MTL:</i>
+						<input id="selectFileMTL" type="file"></input>
+					</td>
+					<td>
+						<button onclick="actionButton()">View</button>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">				
 				// Event that loads the OBJ file in "g_fileOBJString".
 				function readFileOBJ(evt) {
 					var f = evt.target.files[0]; 
@@ -128,6 +130,7 @@
 						alert("It needs both files.");
 					}
 				}
-			</script>
+			</script>			
+		</div>
 	</body>
 </html>
